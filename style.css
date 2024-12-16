@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+
+  header {
+    background-image: url("img/header_image.avif");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        margin-bottom: 1rem;
+
+        li {
+          cursor: pointer;
+
+          button {
+            background: #0078ff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+
+  main {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 2rem 1rem;
+      list-style: none;
+
+      li {
+        background-color: #fff;
+        padding: 1.5rem;
+        text-align: center;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        border-radius: 5px;
+
+        i {
+          display: block;
+          background: url("img/icone1.svg") no-repeat center center;
+          height: 50px;
+          margin-bottom: 1rem;
+
+          &#livreOuvert {
+            background: url("img/icone2.svg") no-repeat center center;
+          }
+
+          &#batiment {
+            background: url("img/icone3.svg") no-repeat center center;
+          }
+
+          &#voiture {
+            background: url("img/icone4.svg") no-repeat center center;
+          }
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          margin-bottom: 0.5rem;
+          color: #333;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+    }
+
+    section {
+      iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+        border: none;
+        margin: 2rem 0;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 2rem;
+
+        li {
+          background: url("img/destination.jpg") no-repeat center center / cover;
+          color: #fff;
+          padding: 2rem;
+          text-align: center;
+          font-weight: bold;
+          text-transform: uppercase;
+          width: 300px;
+          border-radius: 5px;
+
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    article {
+      text-align: center;
+      padding: 2rem;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+
+        p {
+          color: #666;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    section {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        i {
+          display: inline-block;
+          background: url("img/icone5.svg") no-repeat center center;
+          height: 40px;
+          width: 40px;
+
+          &#ancre {
+            background: url("img/icone6.svg") no-repeat center center;
+          }
+
+          &#monument {
+            background: url("img/icone7.svg") no-repeat center center;
+          }
+
+          &#poussette {
+            background: url("img/icone4.svg") no-repeat center center;
+          }
+        }
+
+        li {
+          text-align: center;
+          font-size: 1rem;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  footer {
+    background: #222;
+    color: #fff;
+    padding: 2rem 1rem;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      flex-wrap: wrap;
+
+      li {
+        flex: 1;
+        padding: 1rem;
+        min-width: 250px;
+
+        p {
+          color: #ddd;
+          margin-bottom: 0.3rem;
+
+          &:first-child {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
