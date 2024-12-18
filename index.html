@@ -17,103 +17,127 @@
     <!-- Header -->
     <header>
       <nav>
-        <ul>
-          <li>Destinations</li>
-          <li>Conseils de voyage</li>
-          <li><button>S'abonner</button></li>
-        </ul>
+        <div>
+          <img src="img/logo.png" alt="Logo" />
+        </div>
+        <div>
+          <ul>
+            <li>Destinations</li>
+            <li>Conseils de voyage</li>
+            <li><button>S'abonner</button></li>
+          </ul>
+        </div>
       </nav>
+
       <h1>BLOG VOYAGE</h1>
-      <p>« Explorez le monde avec nous »</p>
+      <h2>- Explorez le monde avec nous -</h2>
     </header>
 
     <main>
-      <ul>
-        <li>
-          <i></i>
-          <h2>Explorer de nouveaux horizons</h2>
-          <p>
-            Découvrez des destinations exceptionnelles et des expériences
-            uniques.
-          </p>
-        </li>
-        <li>
-          <i id="livreOuvert"></i>
-          <h2>Voyagez avec notre application mobile</h2>
-          <p>Accédez à tous nos guides où que vous soyez.</p>
-        </li>
-        <li>
-          <i id="batiment"></i>
-          <h2>Un accès personnel à l’aventure</h2>
-          <p>
-            Obtenez votre carte d’accès personnalisée pour des voyages sur
-            mesure.
-          </p>
-        </li>
-        <li>
-          <i id="voiture"></i>
-          <h2>Équipement de voyage adapté</h2>
-          <p>Utilisez le meilleur matériel pour une aventure sans souci.</p>
-        </li>
-      </ul>
-
-      <section>
-        <iframe src="https://www.google.com/maps/embed?..."></iframe>
-      </section>
-
-      <section>
+      <section id="debut">
         <ul>
-          <li>
-            <h3>DESTINATIONS EXOTIQUES</h3>
+          <li class="grey">
+            <i id="baignoire"></i>
+            <h2>Explorer de nouveaux horizons</h2>
+            <p>
+              Découvrez des destinations exceptionnelles et des expériences
+              uniques.
+            </p>
           </li>
           <li>
-            <h3>EXPÉRIENCES INOUBLIABLES</h3>
+            <i id="livreOuvert"></i>
+            <h2>Voyagez avec notre application mobile</h2>
+            <p>Accédez à tous nos guides où que vous soyez.</p>
+          </li>
+          <li>
+            <i id="batiment"></i>
+            <h2>Un accès personnel à l’aventure</h2>
+            <p>
+              Obtenez votre carte d’accès personnalisée pour des voyages sur
+              mesure.
+            </p>
+          </li>
+          <li class="grey">
+            <i id="voiture"></i>
+            <h2>Équipement de voyage adapté</h2>
+            <p>Utilisez le meilleur matériel pour une aventure sans souci.</p>
           </li>
         </ul>
       </section>
 
-      <article>
-        <h2>Notre objectif, votre exploration</h2>
-        <p>
-          Nous vous guidons dans la planification de vos voyages pour les
-          adapter à vos rêves d'aventure.
-        </p>
-      </article>
-
-      <section>
+      <section id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22264.88116171491!2d4.806564274316411!3d45.7689828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaf13c0b3e27%3A0x7c6f168fe861a185!2sAgence%20Havas%20Voyages!5e0!3m2!1sfr!2sfr!4v1698659297800!5m2!1sfr!2sfr"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0; display: block"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
         <ul>
-          <i id="ancre"></i>
-          <li>Explorez le monde de vos rêves</li>
-          <i id="monument"></i>
-          <li>Un large éventail de destinations</li>
-          <i id="poussette"></i>
-          <li>Des guides de voyage personnalisés</li>
+          <li>
+            <div id="backgroundPool">
+              <p>Decouvrez de nouvelles aventures</p>
+              <h2>DESTINATIONS EXOTIQUES</h2>
+            </div>
+          </li>
+          <li>
+            <div id="backgroundChild">
+              <p>Aventures en plein air</p>
+              <h2>EXPÉRIENCES INOUBLIABLES</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="redirection">
+        <article>
+          <h2>Notre objectif, votre exploration</h2>
+          <p>
+            Nous vous guidons dans la planification de vos voyages pour les
+            adapter à vos rêves d'aventure.
+          </p>
+        </article>
+
+        <ul>
+          <li>
+            <i id="ancre"></i>
+            <p>Explorez le monde de vos rêves</p>
+          </li>
+
+          <li>
+            <i id="monument"></i>
+            <p>Un large éventail de destinations</p>
+          </li>
+
+          <li>
+            <i id="poussette"></i>
+            <p>Des guides de voyage personnalisés</p>
+          </li>
         </ul>
       </section>
     </main>
 
-    <section>
-      <h2>Blog Voyage, explorez le monde autrement</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inscrivez-vous
-        à notre newsletter.
-      </p>
-      <button>Inscrivez-vous à notre newsletter</button>
-    </section>
-
     <footer>
-      <ul>
-        <li>
-          <p>AGENCE</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        </li>
-        <li>
-          <p>ADRESSE</p>
-          <p>13 rue de l'Aventure, 75001 Paris</p>
-          <p>Téléphone : +33 9 12 34 56 78</p>
-          <p>Mail : contact@blogvoyage.com</p>
-        </li>
-      </ul>
+      <section>
+        <ul>
+          <li>
+            <h2>Blog Voyage, explorez le monde autrement</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Inscrivez-vous à notre newsletter.
+            </p>
+            <button>Inscrivez-vous à notre newsletter</button>
+          </li>
+          <li>
+            <p>ADRESSE</p>
+            <p>13 rue de l'Aventure, 75001 Paris</p>
+            <p>Téléphone : +33 9 12 34 56 78</p>
+            <p>Mail : contact@blogvoyage.com</p>
+          </li>
+        </ul>
+      </section>
     </footer>
   </body>
 </html>
