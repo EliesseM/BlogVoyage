@@ -174,9 +174,10 @@ body {
       article {
         text-align: center;
         padding: 2rem;
+        margin: 2rem;
 
         h2 {
-          font-size: 2rem;
+          font-size: 1.3rem;
           margin-bottom: 1rem;
         }
       }
@@ -221,31 +222,79 @@ body {
   }
 
   footer {
-    ul {
-      background-image: linear-gradient(
-          rgba(17, 44, 65, 0.608),
-          rgba(26, 106, 167, 0.279)
-        ),
-        url("img/main_image.avif");
+    #highFooter {
       display: flex;
-      justify-content: space-between;
-      list-style: none;
-      flex-wrap: wrap;
-      padding-bottom: 5em;
 
-      li {
-        flex: 1;
-        padding: 1rem;
-        min-width: 250px;
+      ul {
+        background-image: linear-gradient(
+            rgba(17, 44, 65, 0.734),
+            rgba(26, 106, 167, 0.279)
+          ),
+          url("img/main_image.avif");
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-bottom: 5rem;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          padding-top: 17rem;
+
+          h2 {
+            color: #fff;
+            margin-left: -5%;
+          }
+
+          p {
+            color: #ddd;
+            margin-bottom: 0.3rem;
+            width: 50%;
+          }
+
+          button {
+            background: #0078ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 45%;
+            margin: 5%;
+            margin-left: 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    #lowFooter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #000000;
+      color: #fff;
+      padding: 3%;
+      border-top: solid #0078ff 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        img {
+          width: 20%;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        width: 30%;
 
         p {
-          color: #ddd;
-          margin-bottom: 0.3rem;
-
-          &:first-child {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-          }
+          margin: 10%;
+          width: 100%;
         }
       }
     }
